@@ -1,7 +1,3 @@
-/* seq_test.go
-
-   Tests for graphic sequence functions. */
-
 package graph
 
 import (

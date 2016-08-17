@@ -1,6 +1,4 @@
-/* seq.go
-
-   Functions over graphic sequences. */
+/* Functions over graphic sequences. */
 
 package graph
 
