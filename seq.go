@@ -1,5 +1,4 @@
 /* Functions over graphic sequences. */
-
 package graph
 
 import "sort"
