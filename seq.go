@@ -1,16 +1,14 @@
 /* Functions over graphic sequences. */
 package graph
 
-import "sort"
-
-type DegSeq sort.IntSlice
+type DegSeq []int
 
 /* Decides whether a degree sequence is graphic in linear time using the
    Erdős–Gallai characterization. The behavior is undefined if the sequence
    contains negative degrees or isn't in nonincreasing order.
 
    Returns true iff d is even and satisfies the following for all 1 <= k <= n:
-   \sum_{i=1}^k d_i \leq k(k-1) + \sum_{j=k+1}^n \text{min}\{d_j, k\} */
+   \sum_{i=1}^k d_i \leq k(k-1) + \sum_{j=k+1}^n \min\{d_j, k\} */
 func (d DegSeq) Graphic() bool {
 	maybe := true
 	n := len(d)
